@@ -2,11 +2,12 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header>
+    <header className="jumbotron">
       <h1>Todo App in React</h1>
-      <p>
-        Add your task from below field and hit enter or just click on Add button
+      <p className="lead">
+        Add your task from below field and hit enter or just click on Add Task
       </p>
+      <hr className="my-4" />
     </header>
   );
 };

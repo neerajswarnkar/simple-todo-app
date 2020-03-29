@@ -4,7 +4,7 @@ import TodoItem from "./TodoItem";
 class TodoList extends Component {
   render() {
     return (
-      <ul>
+      <ul className="list-unstyled">
         {this.props.todos.map(todo => (
           <TodoItem
             key={todo.id}

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import TodoList from "./component/TodoList";
 import Header from "./component/Header";
 import InputContainer from "./component/InputContainer";
@@ -57,7 +57,7 @@ class App extends Component {
 
   render() {
     return (
-      <Fragment>
+      <div className="container">
         <Header />
         <InputContainer addTodoProps={this.addTodoItem} />
         <TodoList
@@ -65,7 +65,7 @@ class App extends Component {
           handleChangeProps={this.handleChange}
           removeItemProps={this.removeItem}
         ></TodoList>
-      </Fragment>
+      </div>
     );
   }
 }
