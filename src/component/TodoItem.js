@@ -1,6 +1,12 @@
 import React, { Fragment } from "react";
 
 function TodoItem(props) {
+  const completedTask = {
+    fontStyle: "italic",
+    color: "#dc3545",
+    opacity: 0.5,
+    textDecoration: "line-through"
+  };
   return (
     <Fragment>
       <li className="media mt-3">
@@ -10,7 +16,9 @@ function TodoItem(props) {
           checked={props.todo.status}
           onChange={() => props.handleChangeProps(props.todo.id)}
         />
-        <span className="ml-3">{props.todo.title}</span>
+        <span className="ml-3" style={props.todo.status ? completedTask : null}>
+          {props.todo.title}
+        </span>
 
         <div className="media-body">
           <button
