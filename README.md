@@ -1,4 +1,4 @@
-Live view: https://neerajswarnkar.github.io/simple-todo-app/
+*[https://neerajswarnkar.github.io/simple-todo-app/](Live view) 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
